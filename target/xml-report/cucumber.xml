@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="24.59">
+<testcase classname="First Feature File" name="TC01_Iphone_Search" time="7.687">
+<system-out><![CDATA[Given user is on the google page............................................passed
+When user search for iPhone on google.......................................passed
+Then verify the page title contains iPhone..................................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="First Feature File" name="TC02_Teapot_Search" time="4.735">
+<system-out><![CDATA[Given user is on the google page............................................passed
+When user search for TeaPot on google.......................................passed
+Then verify the page title contains TeaPot..................................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="First Feature File" name="TC03_Flower_Search" time="6.686">
+<system-out><![CDATA[Given user is on the google page............................................passed
+When user search for Flower on google.......................................passed
+Then verify the page title contains Flower..................................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="First Feature File" name="TC04_BMW_Search" time="5.253">
+<system-out><![CDATA[Given user is on the google page............................................passed
+When user search for BMW on google..........................................passed
+Then verify the page title contains BMW.....................................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
