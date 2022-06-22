@@ -10,7 +10,7 @@ public class HomePage {
     public HomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(partialLinkText = "Login")
+    @FindBy(xpath = "(//a[@role='button'])[1]")
     public WebElement homeLoginButton;
 
 }

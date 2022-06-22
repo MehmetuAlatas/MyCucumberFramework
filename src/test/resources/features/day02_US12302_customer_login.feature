@@ -16,5 +16,5 @@ Feature: customer_login
     |username                     |password|
     |customer@bluerentalcars.com  |12345   |
     |customer1@bluerentalcars.com |12346   |
-    |customer2@bluerentalcars.com |12347   |
+    |customer2@bluerentalcars.com |12343   |
     |customer3@bluerentalcars.com |12348   |

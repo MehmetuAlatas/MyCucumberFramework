@@ -24,6 +24,7 @@ public class LoginStepDefs {
     }
     @Given("user login dropdown")
     public void user_login_dropdown() {
+        Driver.waitForClickablility(homePage.homeLoginButton,5);
         homePage.homeLoginButton.click();
     }
     @Given("user sends username {string}")

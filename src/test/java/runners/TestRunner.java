@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt",
         },
         features = "./src/test/resources/features",//path od features folder
-        glue = {"stepdefinitions"},//path of the step definitions folder
+        glue = {"stepdefinitions", "hooks"},//path of the step definitions folder
         tags = "@test3",
         dryRun = false
 )
