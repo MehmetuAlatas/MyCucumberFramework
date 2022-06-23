@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//path od features folder
         glue = {"stepdefinitions"},//path of the step definitions folder
-        tags = "@test2",
+        tags = "@smoke_test",
         dryRun = false
 )
 public class SmokeTestRunner {

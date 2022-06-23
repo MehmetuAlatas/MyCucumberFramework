@@ -17,4 +17,9 @@ public class LoginPage {
     public WebElement loginButton;
     @FindBy(xpath = "//*[text()='invalid credentials']")
     public WebElement invalidCredentialsErrorMessage;
+
+    @FindBy(xpath = "//a[@role='button'])[1]")
+    public WebElement selectAcarDropDown;
+
+
 }

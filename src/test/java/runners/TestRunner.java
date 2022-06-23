@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//path od features folder
         glue = {"stepdefinitions", "hooks"},//path of the step definitions folder
-        tags = "@test3",
+        tags = "@customer_login",
         dryRun = false
 )
 public class TestRunner {

@@ -17,10 +17,9 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
         },
         features = "./src/test/resources/features",//path od features folder
-        glue = {"stepdefinitions","hooks"},//path of the step definitions folder
-        tags = "@customer_login",
-        dryRun = false
-)
+        glue = {"stepdefinitions", "hooks"},//path of the step definitions folder
+        tags = "@Homework",
+        dryRun = false)
 public class Runner {
 }
 /*
