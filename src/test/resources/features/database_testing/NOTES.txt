@@ -1,4 +1,8 @@
-JDBC:
+JDBC:  CWoburn --> username Cw192837?--> password for administiration
+
+Note : just for JDBC Automation, we use GMI Bank Database.
+    Please dont add that to your resume
+
 1. Our database is PostGreSQL so add postgresql dependency
 <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 <dependency>

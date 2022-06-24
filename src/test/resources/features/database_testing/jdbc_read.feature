@@ -7,7 +7,7 @@ Feature: database_read_feature
   Scenario: TC01_read_customer_ssn_information
     And user gets the "*" from "tp_customer" table
     And user reads all of the "ssn" column data
-    Then close the database connection
+    Then close the database connection0
 
     @db_customer_address
     Scenario: TC02_read_customer_address_information

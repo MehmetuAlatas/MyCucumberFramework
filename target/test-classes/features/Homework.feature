@@ -38,4 +38,4 @@ Feature: User should be able to reserve a car
 
     Examples:
       | username                    | password | car         | pick_place | drop_place | pick_date  | pick_time | drop_date  | drop_time | card_number      | name    | expire_date | CVC |
-      | customer@bluerentalcars.com | 12345    | Honda Civic | Mersin     | Anamur     | 01/10/2094 | 01:00PM   | 02/10/2094 | 08:00AM   | 1234123412341234 | Ali Can | 1225        | 565 |
+      | customer@bluerentalcars.com | 12345    | Honda Civic | Porto     | Lizbon     | 01/10/2094 | 01:00PM   | 02/10/2094 | 08:00AM   | 1234123412341234 | Ali Can | 1225        | 565 |

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 23, 2022 01:53:25 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 23, 2022 06:14:29 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 23, 2022 01:53:25 PM</h3>
+<h3>Jun 23, 2022 06:14:29 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 23, 2022 01:54:05 PM</h3>
+<h3>Jun 23, 2022 06:14:32 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>29</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"User should be able to reserve a car":39.026
+"database_read_feature":2.627
 };
 </script>
 <div class="row">
@@ -172,8 +172,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Homework</td>
-<td>2</td>
+<td>@db_customer_ssn</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +213,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 29,
+passGrandChild: 4,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Homework</a>
+<a class="dropdown-item" href="#">@db_customer_ssn</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">User should be able to reserve a car</p>
+            <p class="name">database_read_feature</p>
             <p class="text-sm">
-              <span>1:53:26 PM</span> / <span>00:00:39:026</span>
+              <span>6:14:30 PM</span> / <span>00:00:02:627</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">User should be able to reserve a car</h5>
-<span class='badge badge-success'>06.23.2022 1:53:26 PM</span>
-<span class='badge badge-danger'>06.23.2022 1:54:05 PM</span>
-<span class='badge badge-default'>00:00:39:026</span>
+<h5 class="test-status text-pass">database_read_feature</h5>
+<span class='badge badge-success'>06.23.2022 6:14:30 PM</span>
+<span class='badge badge-danger'>06.23.2022 6:14:32 PM</span>
+<span class='badge badge-default'>00:00:02:627</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,164 +274,32 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User should be able to reserve a car as customer service profile</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_read_customer_ssn_information</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>User should be able to reserve a car as customer service profile</div>
-                </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DBStepDefs.user_connects_to_the_database()">
+                <span>Given user connects to the database</span>
+      <div>
+      </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user is on the login page</span>
+              <div class="step pass-bg" title="stepdefinitions.DBStepDefs.user_gets_the_from_table(java.lang.String,java.lang.String)">
+                <span>And user gets the "*" from "tp_customer" table</span>
       <div>
       </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user login dropdown</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user sends username "customer@bluerentalcars.com"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user sends password "12345"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user clicks on login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user selects a "Honda Civic"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters pick up place "Mersin"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters drop off place "Anamur"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters pick up date "01/10/2094"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters pick up time "01:00PM"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters drop off date "02/10/2094"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters drop off time "08:00AM"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then user clicks on continue reservation</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify complete reservation screen pop up</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters card number "1234123412341234"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters "Ali Can" on the card</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters "1225" and "565"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user checks the agreement</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user clicks complete reservation</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify Reservation created successfully pop up</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And naviaged to Reservations secreen</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And verify the last reservation is created "Honda Civic" "Mersin" "Anamur"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When you click on the last reservation</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify reservation detail page is displayed</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And verify the table has the following fields: Model, Doors, Seats, Luggage, Transmission, Air Conditioning, Fuel Type, Age</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And click click on back to reservations</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And verify Reservation page is displayed</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And click on Home link</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then verify the homepage is displayed</span>
-      <div>
-      </div>
-                  </div>
               </div>
-            </div>
+              <div class="step pass-bg" title="stepdefinitions.DBStepDefs.user_reads_all_of_the_column_data(java.lang.String)">
+                <span>And user reads all of the "ssn" column data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DBStepDefs.close_the_database_connection()">
+                <span>Then close the database connection</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -457,15 +325,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Homework</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@db_customer_ssn</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Homework</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@db_customer_ssn</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -478,21 +346,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:53:26 PM</td>
+<td>18:14:30 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>User should be able to reserve a car as customer service profile</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_read_customer_ssn_information</a>
 <div class="">
-<span class="badge badge-default">User should be able to reserve a car.User should be able to reserve a car as customer service profile</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:53:26 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>User should be able to reserve a car as customer service profile</a>
-<div class="">
-<span class="badge badge-default">User should be able to reserve a car.User should be able to reserve a car as customer service profile</span>
+<span class="badge badge-default">database_read_feature.TC01_read_customer_ssn_information</span>
 </div>
 </td>
 </tr>
