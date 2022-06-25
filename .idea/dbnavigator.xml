@@ -22,14 +22,14 @@
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
-    <autoscroll-to-editor value="false" />
+    <autoscroll-to-editor value="true" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="8822dd6c-9777-410f-b94d-a64517f354d1">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select *  from "public".jhi_user;]]></console>
+      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from "public".tp_account;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -39,6 +39,13 @@
     <connection id="8822dd6c-9777-410f-b94d-a64517f354d1" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="8822dd6c-9777-410f-b94d-a64517f354d1" dataset="public.tp_customer" active-filter-id="">
+      <filter id="500ca5dd-b3e7-48bc-af59-e2016ab297f9" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="zelle_enrolled" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="8822dd6c-9777-410f-b94d-a64517f354d1" dataset="public.tp_employee" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="8822dd6c-9777-410f-b94d-a64517f354d1" dataset="public.tp_customer_account" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="8822dd6c-9777-410f-b94d-a64517f354d1" dataset="public.databasechangelog" active-filter-id="" />
     <filter-actions connection-id="8822dd6c-9777-410f-b94d-a64517f354d1" dataset="public.jhi_user" active-filter-id="" />
   </component>

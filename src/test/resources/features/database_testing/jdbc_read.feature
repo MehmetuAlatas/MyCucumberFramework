@@ -39,7 +39,7 @@ Feature: database_read_feature
         Then verify "jhi_user" table "login" column contains "murtaza" data
         Then close the database connection
 
-  @db_user_login_verify
+  @db_user_email_verify
   Scenario: TC07_verify_jhi_user_email
     And user gets the "*" from "jhi_user" table
     Then verify "jhi_user" table "email" column contains "miquel.okon@hotmail.com" data
