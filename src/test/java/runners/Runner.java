@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+
         monochrome = true,
         plugin = {
                 "pretty",
@@ -21,6 +22,7 @@ import org.junit.runner.RunWith;
         tags = "@db_customer_ssn",
         dryRun = false)
 public class Runner {
+
 }
 /*
 Runner class is used to run the feature files

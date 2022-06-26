@@ -88,7 +88,6 @@ public class DBUtils {
         return statement;
     }
 
-
     //Use this to get the ResutSet object
     public static ResultSet getResultset() {
         try {
