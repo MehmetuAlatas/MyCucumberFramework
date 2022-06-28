@@ -14,8 +14,7 @@ public class DBUtils {
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
-    /**
-     * DBUtils.createConnection(); -> to connect to teh database
+    /*** DBUtils.createConnection(); -> to connect to teh database
      */
     public static void createConnection() {
         String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";
@@ -28,9 +27,7 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
-    /**
-     * DBUtils.executeQuery(String query); -> Execute the query and store is the result set object
-     */
+    /*** DBUtils.executeQuery(String query); -> Execute the query and store is the result set object     */
     public static void executeQuery(String query) {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);

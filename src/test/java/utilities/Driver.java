@@ -21,10 +21,10 @@ public class Driver {
     private static WebDriver driver;
     private static int timeout = 5;
 
-    //What?=>It is just to create, initialize the driver instance.(Singleton driver)
+    /**What?=>It is just to create, initialize the driver instance.(Singleton driver)
     //Why?=>We don't want to create and initialize the driver when we don't need
     //We will create and initialize the driver when it is null
-    //We can use Driver class with different browser(chrome,firefox,headless)
+    //We can use Driver class with different browser(chrome,firefox,headless)*/
     private Driver() {
         //we don't want to create another abject. Singleton pattern
     }
