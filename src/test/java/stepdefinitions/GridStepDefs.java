@@ -21,9 +21,10 @@ public class GridStepDefs {
         driver.get("https://www.bluerentalcars.com/");
     }
     @Given("verify the title of the page is {string}")
-    public void verify_the_title_of_the_page_is(String string) {
+    public void verify_the_title_of_the_page_is(String title) throws InterruptedException {
+        Thread.sleep(5000);
         String actualTitle = driver.getTitle();
-        String expectedTitle = string;
+        String expectedTitle = title;
         Assert.assertEquals(expectedTitle,actualTitle);
     }
     @Then("close the remote driver")
@@ -32,6 +33,7 @@ public class GridStepDefs {
     }
     @Given("user is on the application_URL with firefox")
     public void user_is_on_the_application_url_with_firefox() throws MalformedURLException {
+
         driver= new RemoteWebDriver(new URL("http://192.168.1.102:4444"),new FirefoxOptions());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
