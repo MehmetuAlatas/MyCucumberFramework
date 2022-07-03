@@ -30,7 +30,6 @@ public class HomeworkStepDef {
         select.selectByVisibleText(car);
     }
 
-
     @When("user enters pick up place {string}")
     public void user_enters_pick_up_place(String place) {
         Driver.waitForVisibility(defaultPage.pick_place, 3);
@@ -55,7 +54,6 @@ public class HomeworkStepDef {
 //        defaultPage.pick_time.sendKeys(string);
     }
 
-
     @When("user enters drop off date {string}")
     public void user_enters_drop_off_date(String string) {
         Driver.waitAndSendText(defaultPage.drop_date, string);
@@ -67,20 +65,17 @@ public class HomeworkStepDef {
         Driver.waitAndSendText(defaultPage.drop_time, string);
     }
 
-
     @Then("user clicks on continue reservation")
     public void user_clicks_on_continue_reservation() {
 //       defaultPage.continueReservationButton.click();
         Driver.waitAndClick(defaultPage.continueReservationButton);
     }
 
-
     @Then("verify complete reservation screen pop up")
     public void verify_complete_reservation_screen_pop_up() {
         Driver.waitForVisibility(paymentPage.completeReservation, 3);
         Assert.assertTrue(paymentPage.completeReservation.isDisplayed());
     }
-
 
     @Then("user enters card number {string}")
     public void user_enters_card_number(String string) {
@@ -89,12 +84,10 @@ public class HomeworkStepDef {
         actions.moveToElement(paymentPage.cardNumber).click().sendKeys(Keys.HOME).sendKeys(string).build().perform();
     }
 
-
     @Then("user enters {string} on the card")
     public void user_enters_on_the_card(String string) {
         Driver.waitAndSendText(paymentPage.cardName, string);
     }
-
 
     //                  expire_date  CVC
     @Then("user enters {string} and {string}")
@@ -103,7 +96,6 @@ public class HomeworkStepDef {
         actions.moveToElement(paymentPage.expireDate).click().sendKeys(Keys.HOME).sendKeys(expire_date).build().perform();
         actions.moveToElement(paymentPage.CVC).click().sendKeys(Keys.HOME).sendKeys(CVC).build().perform();
     }
-
 
     @Then("user checks the agreement")
     public void user_checks_the_agreement() {
@@ -138,7 +130,7 @@ public class HomeworkStepDef {
     public void verifyTheLastReservationIsCreated(String car, String pickPlace, String dropPlace) {
         //    | car         | pick_place | drop_place | pick_date  | pick_time | drop_date  | drop_time |  name    |
 //            | Honda Civic | Mersin     | Anamur     | 09/09/2076 | 01:00PM   | 09/09/2077 | 08:00AM   |  Ali Can |
-      //  Driver.waitForVisibility(defaultPage.reservedStatus.get(defaultPage.reservedStatus.size() - 1), 3);
+        //  Driver.waitForVisibility(defaultPage.reservedStatus.get(defaultPage.reservedStatus.size() - 1), 3);
         ReusableMethods.waitFor(5);
         List<WebElement> reservedCarNames = defaultPage.reservedCarListCarNames;
         List<WebElement> reservedPickPlace = defaultPage.reservedPickPlace;
@@ -146,13 +138,13 @@ public class HomeworkStepDef {
         List<WebElement> reservedStatus = defaultPage.reservedStatus;
 
         Driver.waitForVisibility(defaultPage.reservationScrolldown, 10);
-       // actions.moveToElement(defaultPage.reservationScrolldown).perform();
+        // actions.moveToElement(defaultPage.reservationScrolldown).perform();
         Driver.executeJScommand(defaultPage.reservationScrolldown, "arguments[0].scrollIntoView(true);");
 
-         String actualCar = reservedCarNames.get(reservedCarNames.size() - 1).getText();
-         String actualpickPlace = reservedPickPlace.get(reservedPickPlace.size() - 1).getText();
-         String actualdropPlace = reservedDropPlace.get(reservedDropPlace.size() - 1).getText();
-        System.out.println(actualCar+" "+" "+actualpickPlace+" "+" "+actualdropPlace);
+        String actualCar = reservedCarNames.get(reservedCarNames.size() - 1).getText();
+        String actualpickPlace = reservedPickPlace.get(reservedPickPlace.size() - 1).getText();
+        String actualdropPlace = reservedDropPlace.get(reservedDropPlace.size() - 1).getText();
+        System.out.println(actualCar + " " + " " + actualpickPlace + " " + " " + actualdropPlace);
 
         Driver.waitForVisibility(reservedCarNames.get(reservedCarNames.size() - 1), 3);
         Assert.assertEquals(car, actualCar);
@@ -174,7 +166,6 @@ public class HomeworkStepDef {
         actions.moveToElement(defaultPage.reservedTableRows.get(defaultPage.reservedTableRows.size() - 1)).perform();
         Driver.wait(1);
         actions.click(defaultPage.reservedTableRows.get(defaultPage.reservedTableRows.size() - 1)).perform();
-
 
     }
 
