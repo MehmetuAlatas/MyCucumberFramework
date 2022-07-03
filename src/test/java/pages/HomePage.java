@@ -7,6 +7,7 @@ import utilities.Driver;
 
 public class HomePage {
 
+    //select[@name='car']
     public HomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -14,4 +15,3 @@ public class HomePage {
     public WebElement homeLoginButton;
 
 }
-//select[@name='car']
