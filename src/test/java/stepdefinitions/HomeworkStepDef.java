@@ -202,21 +202,17 @@ public class HomeworkStepDef {
     public void verify_reservation_page_is_displayed() {
         Driver.waitForVisibility(defaultPage.reservationsPage, 3);
         Assert.assertTrue(defaultPage.reservationsPage.isDisplayed());
-
     }
 
     @Then("click on Home link")
     public void click_on_home_link() {
         Driver.waitForVisibility(defaultPage.homelink, 3);
         actions.click(defaultPage.homelink).perform();
-
     }
 
     @Then("verify the homepage is displayed")
     public void verify_the_homepage_is_displayed() {
         Driver.wait(1);
         Assert.assertEquals("https://www.bluerentalcars.com/", Driver.getDriver().getCurrentUrl());
-
     }
-
 }
